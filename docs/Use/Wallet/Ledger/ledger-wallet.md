@@ -153,7 +153,7 @@ The OTS key index is limited. You can only use each key ONCE, the address will b
 :::
 
 
-The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you are running low on OTS Keys (<=50) to ensure you have plenty of time to move your coins to a new address. It is up to you to move them, however!
+The [QRL Web Wallet](https://wallet.theqrl.org/) will provide ample warnings you are running low on OTS Keys (\<=50) to ensure you have plenty of time to move your coins to a new address. It is up to you to move them, however!
 
 ### OTS Key Tracking
 

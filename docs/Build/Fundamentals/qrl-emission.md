@@ -50,6 +50,8 @@ The total coin supply, $x$ = $105 \cdot 10^6$, minus coins created at the genesi
 
 The remaining coin supply at block $t$,  $Z_t$, may be calculated with:
 
+
+
 $Z_t = Z_0e^{-\lambda t}$
 
 The coefficient, $\lambda$, is calculated from: $\lambda = \frac{lnZ_0}{t}$. Where $t$, is the total number of blocks in the emission schedule until the final $quanta$. The block reward, $b$ is calculated for each block with:

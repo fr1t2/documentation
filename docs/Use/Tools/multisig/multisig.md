@@ -156,7 +156,7 @@ For each additional member to the example below, add each parties address and se
 |**Weight** | 1 (each) |
 |**Threshold to Spend** | 1 |
 |**Fee** | 0.01 |
-|**OTS Key Index**| {NEXT UNUSED} |
+|**OTS Key Index**| \{NEXT UNUSED} |
 
 This will use an OTS key from the originating address to broadcast the [multisig create transaction](#).
 

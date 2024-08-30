@@ -451,8 +451,8 @@ print(newAddressWithSlaves.text)
 
 | Configuration | Default | Notes |
 | :---: | :---: | :---: | 
-| `height` | `10` | {Min: `6`, Max: `18`} outgoing transactions per slave |
-| `number_of_slaves` | `3` | {Min: `1`, Max: `100`} Number of slaves to generate | 
+| `height` | `10` | \{Min: `6`, Max: `18`\} outgoing transactions per slave |
+| `number_of_slaves` | `3` | \{Min: `1`, Max: `100`\} Number of slaves to generate | 
 | `hash_function` | `shake128` | **Options**: `shake128`, `sha256`, `sha2_256` |
 
 :::note Account Recovery
@@ -2332,9 +2332,9 @@ The total token quantity distribution is calculated by taking the amounts and mu
 Say you have a token with a `"decimals": 2` and `"amounts": [100]` minted tokens, creating a 
 whole token that can be divided into `100` sub-token derivatives to the second decimal place. 
 
-$$
-100 \times 0.01=1\text{ token (divisible by 100)}
-$$
+
+`100 × 0.01 = 1 token (divisible by 100)`
+
 
 
 #### RelayTokenTxn Request
@@ -2559,9 +2559,8 @@ The total token quantity distribution is calculated by taking the amounts and mu
 Say you have a token with a `"decimals": 2` and `"amounts": [100]` minted tokens, creating a 
 whole token that can be divided into `100` sub-token derivatives to the second decimal place. 
 
-$$
-100 \times 0.01=1\text{ token (divisible by 100)}
-$$
+
+`100 × 0.01 = 1 token (divisible by 100)`
 
 
 :::tip
