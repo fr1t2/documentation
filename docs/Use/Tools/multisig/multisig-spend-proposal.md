@@ -44,11 +44,11 @@ Enter the required information for the transaction including the address of the 
 
 | Input | Description | Value | 
 | --- | --- | ---- | 
-|**Recipient** | Recipient(s) to receive funds | {QRL PUBLIC ADDRESS} |
-|**Amount** | Amount of $Quanta$ to send to each given recipient | {INTEGER} |
-|**Expiry block number** | Block number that the vote will end if consensus is not reached | {INTEGER} |
-|**Fee** | Fee for the *Spend Proposal* transaction paid from the initiating users address balance | {INTEGER} |
-|**OTS Key Index**| Next unused OTS key used to sign *spend proposal* transaction | {INTEGER} |
+|**Recipient** | Recipient(s) to receive funds | \{QRL PUBLIC ADDRESS} |
+|**Amount** | Amount of $Quanta$ to send to each given recipient | \{INTEGER} |
+|**Expiry block number** | Block number that the vote will end if consensus is not reached | \{INTEGER} |
+|**Fee** | Fee for the *Spend Proposal* transaction paid from the initiating users address balance | \{INTEGER} |
+|**OTS Key Index**| Next unused OTS key used to sign *spend proposal* transaction | \{INTEGER} |
 
 
 #### Recipient(s)

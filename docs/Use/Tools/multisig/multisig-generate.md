@@ -55,11 +55,11 @@ Here are the various pieces of required information needed to generate a Multisi
 
 | Input | Description | Value | 
 | --- | --- | ---- | 
-|**Signatory** | Parties to be setup as a signatories | {QRL PUBLIC ADDRESS(S)} |
+|**Signatory** | Parties to be setup as a signatories | \{QRL PUBLIC ADDRESS(S)} |
 |**Weight** | Weight for each signatory to use for voting power | {INTEGER} i.e. $1$|
 |**Threshold to Spend** | Minimum vote threshold required for vote to pass | {INTEGER} i.e. $2$ |
-|**Fee** | Fee for the *multisig-generate* transaction |{INTEGER} i.e. $0.01$ |
-|**OTS Key Index**| Next unused OTS key used to sign *multisig-generate* transaction | {INTEGER} i.e. $0$ |
+|**Fee** | Fee for the *multisig-generate* transaction |\{INTEGER} i.e. $0.01$ |
+|**OTS Key Index**| Next unused OTS key used to sign *multisig-generate* transaction | \{INTEGER} i.e. $0$ |
 
 #### Signatory(s)
 

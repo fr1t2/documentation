@@ -39,7 +39,10 @@ pgp import security.theqrl.org.gpg.asc
 gpg --verify shasum.256.pgp.asc
 ```
 
-:::note This should display _gpg: Good signature from "Security team <security@theqrl.org>"_
+:::note 
+
+This should display _gpg: Good signature from "Security team security@theqrl.org"_
+
 :::
 
 ### **Verify the Offline Wallet Files**

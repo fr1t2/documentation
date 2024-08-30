@@ -82,8 +82,12 @@ After you have made your selections and entered a secure password, click the cre
 
 This screen prints your public QRL address, your Mnemonic Phrase, and Hexseed directly to your screen. Write these down somewhere safe, they will recover your wallet.
 
+
+:::warning
+
 > **Important:** Record Your Private Keys! Do Not Lose Them!
-{: .warning}
+
+:::
 
 It's recommended to Save a Secure, encrypted wallet.json file. You will need your password to unlock this file anytime it is loaded into the wallet **Don't Forget This Password!**
 

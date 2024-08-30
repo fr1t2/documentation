@@ -3247,9 +3247,9 @@ message Peer {
 | `nonce` | uint64 | Address Nonce |
 | `ots_bitfield` | repeated bytes | One Time Signature Bitfield |
 | `transaction_hashes` | repeated bytes | Repeated list of all transaction hashes |
-| `tokens` | map<string, uint64> | Map of tokens found in address |
+| `tokens` | map\<string, uint64\> | Map of tokens found in address |
 | `latticePK_list` | repeated [LatticePK](#latticepk) | Repeated list of lattice public keys |
-| `slave_pks_access_type` | map<string, uint32> | Map of slave key access type |
+| `slave_pks_access_type` | map\<string, uint32\> | Map of slave key access type |
 | `ots_counter` | uint64 | Count of used OTS Keys |
 
 
@@ -3477,7 +3477,7 @@ message BlockHeaderExtended {
 
 | Field | Type | Details | 
 | :---: | :---: | :--- |
-| `count` | map<uint32, uint32>  |  |
+| `count` | map\<uint32, uint32\>  |  |
 
 ```go
 message TransactionCount {

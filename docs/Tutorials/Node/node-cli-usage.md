@@ -292,8 +292,12 @@ qrl wallet_recover
 
 You will be prompted for the hexseed you have saved. Ensure you enter it correctly. The wallet address will be printed and you will have a chance to save it. enter yes and your wallet will be recovered and saved into the directory you are currently in. 
 
+:::warning
+
 > This will save your file as an **Unencrypted** wallet.json file. Make sure you encrypt this file with a secure passphrase you will not lose.
-{: .warning}
+
+:::
+
 
 ```bash 
 qrl wallet_encrypt
@@ -312,8 +316,11 @@ qrl wallet_recover --seed-type mnemonic
 You will be prompted for the mnemonic you have saved. Ensure you enter it correctly. The wallet address will be printed and you will have a chance to save it. enter yes and your wallet will be recovered and saved into the directory you are currently in.
 
 
+:::warning
+
 > This will save your file as an **Unencrypted** wallet.json file. Make sure you encrypt this file with a secure passphrase you will not lose.
-{: .warning}
+
+:::
 
 ```bash 
 qrl wallet_encrypt

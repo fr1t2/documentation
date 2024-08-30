@@ -83,7 +83,7 @@ gpg --search-keys security@theqrl.org
 should yield:
 
 > gpg: data source: https://keys.openpgp.org:443
-(1)  Security team <security@theqrl.org>
+(1)  Security team security@theqrl.org
     4096 bit RSA key 14762269BFDD11F3, created: 2019-02-16
 
 selecting key 1 will add the key to your keychain

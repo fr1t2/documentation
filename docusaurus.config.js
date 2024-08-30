@@ -1,61 +1,81 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
+
+import {themes as prismThemes} from 'prism-react-renderer';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
-const math = require('remark-math');
-const katex = require('rehype-katex');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  // metata //
   title: 'QRL Docs',
   tagline: 'Documentation for The Quantum Resistant Ledger - The QRL',
+  favicon: 'assets/favicon.svg',
   url: 'https://docs.theqrl.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
-  favicon: 'assets/favicon.svg',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'theQRL', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+/*
   markdown: {
       mermaid: true,
     },
-    themes: ['@docusaurus/theme-mermaid'],
-
+  themes: ['@docusaurus/theme-mermaid'],
+*/
 
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+
         debug: true, // This will enable the plugin in production  
+
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          //path: 'docs/',
+          sidebarPath: './sidebars.js',
           routeBasePath: '/', // Serve the docs at the site's root
-          editUrl:
-            'https://github.com/theqrl.org/documentation',
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
+          editUrl: 'https://github.com/theqrl.org/documentation',
+//          remarkPlugins: [math],
+//          rehypePlugins: [katex],
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
 
+        /* // blog stuff
+        blog: {
+          showReadingTime: true,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // Useful options to enforce blogging best practices
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
+        },
+          */
         
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-//          customCss: [require.resolve('./static/assets/css/overrides.css'), require.resolve('./src/css/custom.css')]
+          customCss: './src/css/custom.css',
         },
       }),
     ],
@@ -71,6 +91,7 @@ const config = {
     },
   ],
 
+/*// ----- Need to work through
   plugins: [
     [require.resolve('@cmfcmf/docusaurus-search-local'), {
       // whether to index docs pages
@@ -86,10 +107,13 @@ const config = {
     }],
      
   ],
-
+*/
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
+//      image: 'img/docusaurus-social-card.jpg',
+
       liveCodeBlock: {
         /**
          * The position of the live playground, above or under the editor
@@ -103,7 +127,6 @@ const config = {
           hideable: true,
         },
       },
-      
       navbar: {
         title: '',
         hideOnScroll: true,    
@@ -248,6 +271,8 @@ const config = {
       },
 
 
+
+
       footer: {
         style: 'dark',
         links: [
@@ -301,11 +326,12 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} The QRL - Built with Docusaurus.`,
       },
-      prism: {
+/*      prism: {
         theme: require('prism-react-renderer/themes/github'),
         darkTheme: require('prism-react-renderer/themes/dracula'),
       },
+*/      
     }),
 };
 
-module.exports = config;
+export default config;
