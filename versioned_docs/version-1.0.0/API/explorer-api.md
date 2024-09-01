@@ -35,7 +35,7 @@ Far an easy to read output use a browser add-on like Chrome's [jsonview](https:/
 
 
 :::info
-Default response is in JSON format Append /text to the end of most requests to get a simple text response [https://explorer.theqrl.org/api/{REQUEST}/text](https://explorer.theqrl.org/api/blockheight/text)
+Default response is in JSON format Append /text to the end of most requests to get a simple text response [https://explorer.theqrl.org/api/\{REQUEST\}/text](https://explorer.theqrl.org/api/blockheight/text)
 :::
 
 

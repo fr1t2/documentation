@@ -14,7 +14,6 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  // metata //
   title: 'QRL Docs',
   tagline: 'Documentation for The Quantum Resistant Ledger - The QRL',
   favicon: 'assets/favicon.svg',
@@ -24,6 +23,7 @@ const config = {
   projectName: 'documentation', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
+
 
 
   i18n: {
@@ -108,9 +108,16 @@ const config = {
      
   ],
 */
+
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+        // Declare some <meta> tags
     ({
+      metadata: [
+        {name: 'keywords', content: 'QRL, Quantum Resistant Ledger, ZOND, Documentation'}
+        //{name: 'twitter:card', content: 'summary_large_image'},
+      ],
       // Replace with your project's social card
 //      image: 'img/docusaurus-social-card.jpg',
 
@@ -136,7 +143,7 @@ const config = {
         },
         items: [
         /*// Left Side */
-          {
+            {
             type: 'dropdown',
             label: 'Use',
             position: 'left',
@@ -239,6 +246,10 @@ const config = {
 
         // Right Side
 
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+          },
           {
             type: 'dropdown',
             label: 'QRL Network',

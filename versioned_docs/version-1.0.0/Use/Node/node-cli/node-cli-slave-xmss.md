@@ -49,7 +49,7 @@ Fee [0.0]: # how much fee to pay to broadcast this across network.
 #### Number of Slaves 
 
 |  Tree Height | Available Keys | With Slaves.json |
-|: ---------|:----------|:-----|
+|:---------|:----------|:-----|
 | 8  | 256 | 6,553,600 |
 | 10 |  1,024 | 104,857,600 | 
 | 12 |  4,096 | 1,677,721,600 |

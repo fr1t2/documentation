@@ -35,16 +35,61 @@ const sidebars = {
 */
 
 
+
 const sidebars = {
-  docSidebar: [
+  mainSidebar: [
     {
       type: 'doc',
-      id: 'getting-started', // document ID
+      label: 'Home', // sidebar label
+      id: 'mainIndex', // document ID
+    },
+    {
+      type: 'doc',
+      label: 'Zond', // sidebar label
+      id: 'zond-getting-started', // document ID
+    },
+    {
+      type: 'doc',
+      label: 'QRL', // sidebar label
+      id: 'qrl-getting-started', // document ID
+    },
+  ],
+
+  zondSidebar: [
+    {
+      type: 'doc',
+      id: 'zond-getting-started', // document ID
+      label: 'Getting Started', // sidebar label
+    },
+    {
+      type: 'category',
+      label: 'GZond',
+      link: {
+        type: 'generated-index',
+        title: 'GZond Docs',
+        description: 'Documentation for the GZond project.',
+        slug: '/zond/gzond',
+        keywords: ['gzond', 'zond', 'consensus'],
+        image: '/assets/img/icons/yellow.png',
+      },
+      items: [
+        'zond-getting-started',
+      ]
+    },
+  ],
+
+
+
+
+  qrlSidebar: [
+    {
+      type: 'doc',
+      id: 'qrl-getting-started', // document ID
       label: 'Getting Started', // sidebar label
     },
     {
       type: 'doc',
-      id: 'Learn/what-is-qrl', // document ID
+      id: 'QRL/Learn/what-is-qrl', // document ID
       label: 'What Is The QRL', // sidebar label
     },    
 
@@ -58,7 +103,7 @@ const sidebars = {
         type: 'generated-index',
         title: 'Using The QRL',
         description: 'Covering QRL Wallet usage, Node installation, Mining, and all things QRL Network Interfacing',
-        slug: '/use',
+        slug: '/qrl/use',
         keywords: ['use'],
         image: '/assets/img/icons/yellow.png',
       },
@@ -70,14 +115,14 @@ const sidebars = {
             type: 'generated-index',
             title: 'QRL Wallet',
             description: 'Covering QRL Wallets across all distributions and supported devices.',
-            slug: '/use/wallet',
+            slug: '/qrl/use/wallet',
             keywords: ['use'],
             image: '/assets/img/icons/yellow.png',
           },
           items: [
-            'Use/Wallet/wallet-overview',
-            'Use/Wallet/check-balance',
-            'Use/Wallet/qrl-address-overview',
+            'QRL/Use/Wallet/wallet-overview',
+            'QRL/Use/Wallet/check-balance',
+            'QRL/Use/Wallet/qrl-address-overview',
             { // web Wallet //
               type: 'category',
               label: 'Web Wallet',
@@ -85,17 +130,17 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Web Wallet',
                 description: 'Covering the QRL Web Wallet usage.',
-                slug: '/use/wallet/web',
+                slug: '/qrl/use/wallet/web',
                 keywords: ['use-web-wallet'],
                 image: '/assets/img/icons/yellow.png',
               },
 
               items: [
-                'Use/Wallet/Web/web-wallet-overview',
-                'Use/Wallet/Web/web-wallet-new',
-                'Use/Wallet/Web/web-wallet-open',
-                'Use/Wallet/Web/web-wallet-send',
-                'Use/Wallet/Web/web-wallet-backup',
+                'QRL/Use/Wallet/Web/web-wallet-overview',
+                'QRL/Use/Wallet/Web/web-wallet-new',
+                'QRL/Use/Wallet/Web/web-wallet-open',
+                'QRL/Use/Wallet/Web/web-wallet-send',
+                'QRL/Use/Wallet/Web/web-wallet-backup',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -107,17 +152,17 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Desktop Wallet',
                 description: 'Covering the QRL Desktop Wallet usage.',
-                slug: '/use/wallet/desktop',
+                slug: '/qrl/use/wallet/desktop',
                 keywords: ['use-desktop-wallet'],
                 image: '/assets/img/icons/yellow.png',
               },
               items: [
-                'Use/Wallet/Desktop/desktop-wallet-overview',
-                'Use/Wallet/Desktop/desktop-wallet-install',
-                'Use/Wallet/Desktop/desktop-wallet-new',
-                'Use/Wallet/Desktop/desktop-wallet-open',
-                'Use/Wallet/Desktop/desktop-wallet-send',
-                'Use/Wallet/Desktop/desktop-wallet-backup',
+                'QRL/Use/Wallet/Desktop/desktop-wallet-overview',
+                'QRL/Use/Wallet/Desktop/desktop-wallet-install',
+                'QRL/Use/Wallet/Desktop/desktop-wallet-new',
+                'QRL/Use/Wallet/Desktop/desktop-wallet-open',
+                'QRL/Use/Wallet/Desktop/desktop-wallet-send',
+                'QRL/Use/Wallet/Desktop/desktop-wallet-backup',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -129,19 +174,19 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Ledger Wallet',
                 description: 'Covering the QRL Ledger device usage.',
-                slug: '/use/wallet/ledger',
+                slug: '/qrl/use/wallet/ledger',
                 keywords: ['use-ledger-wallet'],
                 image: '/assets/img/icons/yellow.png',
               },
 
               items: [
-                'Use/Wallet/Ledger/ledger-wallet-overview',
-                'Use/Wallet/Ledger/ledger-wallet-new',
-                'Use/Wallet/Ledger/ledger-wallet-open',
-                'Use/Wallet/Ledger/ledger-wallet-send',
-                'Use/Wallet/Ledger/ledger-wallet-backup-restore',
-                'Use/Wallet/Ledger/ledger-wallet-plausible-deniability',
-                'Use/Wallet/Ledger/ledger-wallet-known-issues',
+                'QRL/Use/Wallet/Ledger/ledger-wallet-overview',
+                'QRL/Use/Wallet/Ledger/ledger-wallet-new',
+                'QRL/Use/Wallet/Ledger/ledger-wallet-open',
+                'QRL/Use/Wallet/Ledger/ledger-wallet-send',
+                'QRL/Use/Wallet/Ledger/ledger-wallet-backup-restore',
+                'QRL/Use/Wallet/Ledger/ledger-wallet-plausible-deniability',
+                'QRL/Use/Wallet/Ledger/ledger-wallet-known-issues',
                 
               ],
               collapsible: true, // Set the category to be collapsible
@@ -155,18 +200,18 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Mobile Wallet',
                 description: 'Covering the QRL mobile Wallet usage.',
-                slug: '/use/wallet/mobile',
+                slug: '/qrl/use/wallet/mobile',
                 keywords: ['use-mobile-wallet'],
                 image: '/assets/img/icons/yellow.png',
               },
               items: [
-                'Use/Wallet/Mobile/mobile-wallet-overview',
-                'Use/Wallet/Mobile/mobile-wallet-new',
-                'Use/Wallet/Mobile/mobile-wallet-open',
-                'Use/Wallet/Mobile/mobile-wallet-backup',
-                //'Use/Wallet/Mobile/mobile-wallet-send',
-                //'Use/Wallet/Mobile/mobile-wallet-install',
-                //'Use/Wallet/Mobile/mobile-wallet-switch-addresses',
+                'QRL/Use/Wallet/Mobile/mobile-wallet-overview',
+                'QRL/Use/Wallet/Mobile/mobile-wallet-new',
+                'QRL/Use/Wallet/Mobile/mobile-wallet-open',
+                'QRL/Use/Wallet/Mobile/mobile-wallet-backup',
+                //'QRL/Use/Wallet/Mobile/mobile-wallet-send',
+                //'QRL/Use/Wallet/Mobile/mobile-wallet-install',
+                //'QRL/Use/Wallet/Mobile/mobile-wallet-switch-addresses',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -179,15 +224,15 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Offline Wallet',
                 description: 'Covering the QRL offline Wallet usage.',
-                slug: '/use/wallet/offline',
+                slug: '/qrl/use/wallet/offline',
                 keywords: ['use-offline-wallet'],
                 image: '/assets/img/icons/yellow.png',
               },              
               items: [
-                'Use/Wallet/Offline/offline-wallet-overview',
-                'Use/Wallet/Offline/offline-wallet-install',
-                'Use/Wallet/Offline/offline-wallet-verify',
-                'Use/Wallet/Offline/offline-wallet-new',
+                'QRL/Use/Wallet/Offline/offline-wallet-overview',
+                'QRL/Use/Wallet/Offline/offline-wallet-install',
+                'QRL/Use/Wallet/Offline/offline-wallet-verify',
+                'QRL/Use/Wallet/Offline/offline-wallet-new',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -204,14 +249,14 @@ const sidebars = {
             type: 'generated-index',
             title: 'Mining QRL',
             description: 'Covering QRL Mining topics.',
-            slug: '/use/mining',
+            slug: '/qrl/use/mining',
             keywords: ['mining-qrl'],
             image: '/assets/img/icons/yellow.png',
           },
           items: [
-            'Use/Mining/mining-qrl-overview',
-            'Use/Mining/solo-mining',
-            'Use/Mining/pool-mining',
+            'QRL/Use/Mining/mining-qrl-overview',
+            'QRL/Use/Mining/solo-mining',
+            'QRL/Use/Mining/pool-mining',
           ],
           collapsible: true, // Set the category to be collapsible
           collapsed: true, // Set the category to be initially collapsed or open by default
@@ -224,18 +269,18 @@ const sidebars = {
             type: 'generated-index',
             title: 'QRL Node',
             description: 'Covering QRL Node installation and operation.',
-            slug: '/use/node',
+            slug: '/qrl/use/node',
             keywords: ['use-node'],
             image: '/assets/img/icons/yellow.png',
           },
           items: [
-            'Use/Node/overview',
-            'Use/Node/node-requirements',
-            'Use/Node/node-installation',
-            'Use/Node/node-config',
-            'Use/Node/node-uses',
-            'Use/Node/node-update',
-            'Use/Node/qrl-maintenance',
+            'QRL/Use/Node/overview',
+            'QRL/Use/Node/node-requirements',
+            'QRL/Use/Node/node-installation',
+            'QRL/Use/Node/node-config',
+            'QRL/Use/Node/node-uses',
+            'QRL/Use/Node/node-update',
+            'QRL/Use/Node/qrl-maintenance',
 
             { // node-cli section //
               type: 'category',
@@ -244,14 +289,14 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Node-CLI',
                 description: 'QRL node command line tools.',
-                slug: '/use/node/node-cli',
+                slug: '/qrl/use/node/node-cli',
                 keywords: ['node-cli'],
                 image: '/assets/img/icons/yellow.png',
               },
               items: [
-                'Use/Node/node-cli/node-cli',
-                'Use/Node/node-cli/backup-cli-wallet',
-                'Use/Node/node-cli/node-cli-slave-xmss',
+                'QRL/Use/Node/node-cli/node-cli',
+                'QRL/Use/Node/node-cli/backup-cli-wallet',
+                'QRL/Use/Node/node-cli/node-cli-slave-xmss',
                 ]
             },
           ],
@@ -265,7 +310,7 @@ const sidebars = {
             type: 'generated-index',
             title: 'QRL Tools',
             description: 'Covering QRL Tools.',
-            slug: '/use/tools',
+            slug: '/qrl/use/tools',
             keywords: ['use-tool'],
             image: '/assets/img/icons/yellow.png',
           },
@@ -278,16 +323,16 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Explorer Usage',
                 description: 'Using the QRL Explorer.',
-                slug: '/use/tools/explorer',
+                slug: '/qrl/use/tools/explorer',
                 keywords: ['explorer'],
                 image: '/assets/img/icons/yellow.png',
               },
               items: [
-                'Use/Tools/explorer/qrl-explorer',
-                'Use/Tools/explorer/address-lookup',
-                'Use/Tools/explorer/transaction-lookup',
-                'Use/Tools/explorer/block-lookup',
-                'Use/Tools/explorer/token-lookup',
+                'QRL/Use/Tools/explorer/qrl-explorer',
+                'QRL/Use/Tools/explorer/address-lookup',
+                'QRL/Use/Tools/explorer/transaction-lookup',
+                'QRL/Use/Tools/explorer/block-lookup',
+                'QRL/Use/Tools/explorer/token-lookup',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -300,12 +345,12 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Message Usage',
                 description: 'QRL Message transaction usage',
-                slug: '/use/tools/messages',
+                slug: '/qrl/use/tools/messages',
                 keywords: ['messages'],
                 image: '/assets/img/icons/yellow.png',
               },
               items: [
-                'Use/Tools/messages/messages',
+                'QRL/Use/Tools/messages/messages',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -319,15 +364,15 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Multi-signature Usage',
                 description: 'Multi-sig transaction usage and guide.',
-                slug: '/use/tools/multi-sig',
+                slug: '/qrl/use/tools/multi-sig',
                 keywords: ['multisig'],
                 image: '/assets/img/icons/yellow.png',
               },
               items: [
-                'Use/Tools/multisig/multisig',
-                'Use/Tools/multisig/multisig-generate',
-                'Use/Tools/multisig/Multisig-spend-proposal',
-                'Use/Tools/multisig/multisig-vote',
+                'QRL/Use/Tools/multisig/multisig',
+                'QRL/Use/Tools/multisig/multisig-generate',
+                'QRL/Use/Tools/multisig/Multisig-spend-proposal',
+                'QRL/Use/Tools/multisig/multisig-vote',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -341,14 +386,14 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'Notarization Usage Guide',
                 description: 'Usage for the Notarization functions.',
-                slug: '/use/tools/notarize',
+                slug: '/qrl/use/tools/notarize',
                 keywords: ['notarize'],
                 image: '/assets/img/icons/yellow.png',
               },
               items: [
-                'Use/Tools/notarize/notarization-overview',
-                'Use/Tools/notarize/notarization-data',
-                'Use/Tools/notarize/notarization-verification',
+                'QRL/Use/Tools/notarize/notarization-overview',
+                'QRL/Use/Tools/notarize/notarization-data',
+                'QRL/Use/Tools/notarize/notarization-verification',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -362,14 +407,14 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Token Usage',
                 description: 'Token Transactions and usage.',
-                slug: '/use/tools/tokens',
+                slug: '/qrl/use/tools/tokens',
                 keywords: ['tokens'],
                 image: '/assets/img/icons/yellow.png',
               },
               items: [
-                'Use/Tools/tokens/qrl-tokens-overview',
-                'Use/Tools/tokens/create-token',
-                'Use/Tools/tokens/send-token',
+                'QRL/Use/Tools/tokens/qrl-tokens-overview',
+                'QRL/Use/Tools/tokens/create-token',
+                'QRL/Use/Tools/tokens/send-token',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -381,12 +426,12 @@ const sidebars = {
                 type: 'generated-index',
                 title: 'QRL Integrations',
                 description: 'QRL integrations with other projects.',
-                slug: '/use/tools/integrations',
+                slug: '/qrl/use/tools/integrations',
                 keywords: ['integrations'],
                 image: '/assets/img/icons/yellow.png',
               },
               items: [
-                'Use/Tools/Integrations/keybase/keybase',
+                'QRL/Use/Tools/Integrations/keybase/keybase',
               ],
               collapsible: true, // Set the category to be collapsible
               collapsed: true, // Set the category to be initially collapsed or open by default
@@ -411,21 +456,21 @@ const sidebars = {
         type: 'generated-index',
         title: 'Developer Docs',
         description: 'Advanced documentation for developers and adventurers building on the QRL.',
-        slug: '/build',
+        slug: '/qrl/build',
         keywords: ['developer', 'build'],
         image: '/assets/img/icons/yellow.png',
       },
       items: [
         // 'Build/developers-overview',
-        'Build/qrl-status',
-        'Build/qrllib',
-        'Build/security',
-        'Build/Docker/qrl-docker',
-        'Build/Mining/qrandomx',
-        'Build/Mining/qrl-pool-setup',
-        'Build/QIP/qip-overview',
-        'Build/QRL-CLI/qrl-cli',
-        'Build/qrl-private-network',
+        'QRL/Build/qrl-status',
+        'QRL/Build/qrllib',
+        'QRL/Build/security',
+        'QRL/Build/Docker/qrl-docker',
+        'QRL/Build/Mining/qrandomx',
+        'QRL/Build/Mining/qrl-pool-setup',
+        'QRL/Build/QIP/qip-overview',
+        'QRL/Build/QRL-CLI/qrl-cli',
+        'QRL/Build/qrl-private-network',
         { // Fundamentals//
           type: 'category',
           label: 'QRL Fundamentals',
@@ -433,14 +478,14 @@ const sidebars = {
             type: 'generated-index',
             title: 'QRL Fundamental Topics',
             description: 'Covering some fundamental topics related to the QRL',
-            slug: '/build/fundamentals',
+            slug: '/qrl/build/fundamentals',
             keywords: ['learn'],
             image: '/assets/img/icons/yellow.png',
           },
           items: [
-            'Build/Fundamentals/ots-keys',
-            'Build/Fundamentals/whitepaper',
-            'Build/Fundamentals/qrl-emission',
+            'QRL/Build/Fundamentals/ots-keys',
+            'QRL/Build/Fundamentals/whitepaper',
+            'QRL/Build/Fundamentals/qrl-emission',
           ],
           collapsible: true, // Set the category to be collapsible
           collapsed: true, // Set the category to be initially collapsed or open by default
@@ -452,13 +497,13 @@ const sidebars = {
             type: 'generated-index',
             title: 'QRL Message Encoding Documentation',
             description: 'Message encoding standard for the various QRL Message Transaction types',
-            slug: '/build/messages',
+            slug: '/qrl/build/messages',
             keywords: ['learn'],
             image: '/assets/img/icons/yellow.png',
           },
           items: [
-            'Build/Messages/message-tx-encoding',
-            'Build/Messages/notarization-message-encoding',
+            'QRL/Build/Messages/message-tx-encoding',
+            'QRL/Build/Messages/notarization-message-encoding',
           ],
           collapsible: true, // Set the category to be collapsible
           collapsed: true, // Set the category to be initially collapsed or open by default
@@ -470,16 +515,16 @@ const sidebars = {
             type: 'generated-index',
             title: 'QRL Address Docs',
             description: 'Building blocks for the QRL Address Scheme, how addresses are constructed and the cryptography behind them',
-            slug: '/build/addresses',
+            slug: '/qrl/build/addresses',
             keywords: ['learn'],
             image: '/assets/img/icons/yellow.png',
           },
           items: [
-            'Build/Address/qrl-address-scheme',
-            'Build/Address/hexphrase',
-            'Build/Address/mnemonic',
-            'Build/Address/wallet-json',
-            'Build/Address/slave-keys',
+            'QRL/Build/Address/qrl-address-scheme',
+            'QRL/Build/Address/hexphrase',
+            'QRL/Build/Address/mnemonic',
+            'QRL/Build/Address/wallet-json',
+            'QRL/Build/Address/slave-keys',
           ],
           collapsible: true, // Set the category to be collapsible
           collapsed: true, // Set the category to be initially collapsed or open by default
@@ -491,14 +536,14 @@ const sidebars = {
             type: 'generated-index',
             title: 'QRL Code Libraries and helpers',
             description: 'Various helper scripts developed to aid and assist in developing on the QRL.',
-            slug: '/build/helpers',
+            slug: '/qrl/build/helpers',
             keywords: ['qrl-helpers', 'node-helpers'],
             image: '/assets/img/icons/yellow.png',
           },
           items: [
-            'Build/QRL-Helpers/node-helpers',
-            'Build/QRL-Helpers/validate-qrl-address',
-            'Build/QRL-Helpers/explorer-helpers',
+            'QRL/Build/QRL-Helpers/node-helpers',
+            'QRL/Build/QRL-Helpers/validate-qrl-address',
+            'QRL/Build/QRL-Helpers/explorer-helpers',
           ],
           collapsible: true, // Set the category to be collapsible
           collapsed: true, // Set the category to be initially collapsed or open by default
@@ -518,26 +563,27 @@ const sidebars = {
         type: 'generated-index',
         title: 'API Docs',
         description: 'API documentation for developers building on the QRL.',
-        slug: '/api',
+        slug: '/qrl/api',
         keywords: ['api', 'developers', 'rest', 'grpc'],
         image: '/assets/img/icons/yellow.png',
       },
       items: [
-        'API/qrl-api-overview',
-        'API/qrl-public-api',
-        'API/wallet-api',
-        'API/explorer-api',
-        'API/richlist-api',
-        'API/walletd-rest-proxy',
-        'API/zeus-proxy',
+        'QRL/API/qrl-api-overview',
+        'QRL/API/qrl-public-api',
+        'QRL/API/wallet-api',
+        'QRL/API/explorer-api',
+        'QRL/API/richlist-api',
+        'QRL/API/walletd-rest-proxy',
+        'QRL/API/zeus-proxy',
       ]
     },
 
   ],
+
   // tutorialSidebar shown on the tutorials pages
   tutorialSidebar: [
-    'Tutorials/qrl-tutorials',
-    'Tutorials/notarize-qrl-cli',
+    'QRL/Tutorials/qrl-tutorials',
+    'QRL/Tutorials/notarize-qrl-cli',
 
     { // Node tutorials //
       type: 'category',
@@ -546,15 +592,15 @@ const sidebars = {
         type: 'generated-index',
         title: 'QRL Node Tutorials',
         description: 'Guides related to node operations.',
-        slug: '/tutorials/node',
+        slug: '/qrl/tutorials/node',
         keywords: ['node-tutorials'],
         image: '/assets/img/icons/yellow.png',
       },
 
       items: [
-        'Tutorials/Node/dual-node-host',
-        'Tutorials/Node/walletd-api-linux-guide',
-        'Tutorials/Node/backup-restore-node-state',
+        'QRL/Tutorials/Node/dual-node-host',
+        'QRL/Tutorials/Node/walletd-api-linux-guide',
+        'QRL/Tutorials/Node/backup-restore-node-state',
       ],
       collapsible: true, // Set the category to be collapsible
       collapsed: true, // Set the category to be initially collapsed or open by default
@@ -567,7 +613,7 @@ const sidebars = {
         type: 'generated-index',
         title: 'QRL Wallet Tutorials',
         description: 'Guides related to wallet operations.',
-        slug: '/tutorials/wallet',
+        slug: '/qrl/tutorials/wallet',
         keywords: ['wallet-tutorials'],
         image: '/assets/img/icons/yellow.png',
       },
@@ -575,7 +621,7 @@ const sidebars = {
       items: [
       // 'Tutorials/Wallet/automatic-wallet-api-use', 
       // 'Tutorials/Wallet/automatic-wallet-api', 
-      'Tutorials/Wallet/generate-address-dice',
+      'QRL/Tutorials/Wallet/generate-address-dice',
       ],
       collapsible: true, // Set the category to be collapsible
       collapsed: true, // Set the category to be initially collapsed or open by default

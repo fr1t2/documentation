@@ -17,7 +17,7 @@ slug: /build/qrl-cli/overview
 ---
 
 
-QRL CLI functions
+# QRL CLI functions
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/@theqrl/cli.svg)](https://npmjs.org/package/@theqrl/cli)

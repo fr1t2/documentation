@@ -205,10 +205,10 @@ optional arguments:
 |---| --- |
 | --mining_thread_count -m MINING_THREAD_COUNT | Number of CPU threads to use for mining|
 | --quiet -q | Quiet the output to the console|
-| --qrldir -d QRL_DIR | Directory to use for root node data (default `~/.qrl`|
+| --qrldir -d QRL_DIR | Directory to use for root node data default `~/.qrl`|
 | --no-colors  | Disable colored output to console|
-| --loglevel -l | DEBUG,INFO,WARNING,ERROR,CRITICAL} Set the logging level|
-| --network-type {mainnet,testnet} | Set the type of node to run setting default node directory to `~/.qrl-testnet`|
+| --loglevel -l | \{DEBUG,INFO,WARNING,ERROR,CRITICAL\} Set the logging level|
+| --network-type \{mainnet,testnet\} | Set the type of node to run setting default node directory to `~/.qrl-testnet`|
 | --miningAddress  | |
 | --mockGetMeasurement  | |
 | --debug  | |

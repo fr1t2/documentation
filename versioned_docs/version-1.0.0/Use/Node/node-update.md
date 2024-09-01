@@ -113,7 +113,7 @@ You can now update the node.
 
 #### Linux `kill` Command
 
-To stop the node, use the `kill {PID}` command where {PID} is replaced with the PID of the local process. 
+To stop the node, use the `kill {PID}` command where \{PID\} is replaced with the PID of the local process. 
 
 `ps aux |grep start_qrl` shows the running QRL node process on the local machine.
 

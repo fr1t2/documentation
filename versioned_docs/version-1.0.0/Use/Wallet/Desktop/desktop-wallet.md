@@ -73,8 +73,8 @@ Follow our guide on Installing the Desktop wallet for all operating systems supp
 
 <span>
   <section class="row list_node_modules-@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module">
-    <article class="col col--6 margin-bottom--lg">
-      <a class="card padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/install">
+    <article class="col col--12 margin-bottom--md">
+      <a class="card padding--md cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/install">
         <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" title="Desktop Wallet Install">
           Desktop Wallet Install
         </h2>
@@ -94,8 +94,8 @@ The wallet will hold funds for a user and is required to interact with QRL syste
 
 <span>
   <section class="row list_node_modules-@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module">
-    <article class="col col--6 margin-bottom--lg">
-      <a class="card padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/new">
+    <article class="col col--12 margin-bottom--md">
+      <a class="card padding--md cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/new">
         <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" title="Desktop Wallet New">
           Desktop Wallet New
         </h2>
@@ -114,8 +114,8 @@ Make sure to backup your wallet and verify the backup is functional prior to fun
 
 <span>
   <section class="row list_node_modules-@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module">
-    <article class="col col--6 margin-bottom--lg">
-      <a class="card padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/backup">
+    <article class="col col--12 margin-bottom--md">
+      <a class="card padding--md cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/backup">
         <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" title="Desktop Wallet Backup">
           Desktop Wallet Backup
         </h2>
@@ -135,8 +135,8 @@ Recovering or opening a QRL Wallet allows access to the funds and utilization of
 
 <span>
   <section class="row list_node_modules-@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module">
-    <article class="col col--6 margin-bottom--lg">
-      <a class="card padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/open">
+    <article class="col col--12 margin-bottom--md">
+      <a class="card padding--md cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/open">
         <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" title="Desktop Wallet Open">
           Desktop Wallet Open
         </h2>
@@ -156,8 +156,8 @@ Using the Desktop QRL Wallet to send QRL to another address. Otherwise known as 
 
 <span>
   <section class="row list_node_modules-@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module">
-    <article class="col col--6 margin-bottom--lg">
-      <a class="card padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/send">
+    <article class="col col--12 margin-bottom--md">
+      <a class="card padding--md cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/wallet/desktop/send">
         <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" title="Desktop Wallet Send">
           Desktop Wallet Send
         </h2>
@@ -175,8 +175,8 @@ Using the Desktop QRL Wallet to send QRL to another address. Otherwise known as 
 
 <span>
   <section class="row list_node_modules-@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module">
-    <article class="col col--6 margin-bottom--lg">
-      <a class="card padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/tools">
+    <article class="col col--12 margin-bottom--md">
+      <a class="card padding--md cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/use/tools">
         <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" title="Desktop Wallet Tools">
           Desktop Wallet Tools
         </h2>
