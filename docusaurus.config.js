@@ -11,6 +11,7 @@ import rehypeKatex from 'rehype-katex';
 
 const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+var prysmVersion = "v5.0.0";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -25,6 +26,10 @@ const config = {
   onBrokenMarkdownLinks: 'throw',
 
 
+  customFields: {
+      image: 'img/Prysm.svg',
+      prysmVersion: prysmVersion,
+  },
 
   i18n: {
     defaultLocale: 'en',

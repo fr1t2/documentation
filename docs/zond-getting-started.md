@@ -3,8 +3,8 @@ id: zond-getting-started
 title: The Zond Documentation
 hide_title: false
 hide_table_of_contents: true
-displayed_sidebar: zondSidebar
-sidebar_label: Zond
+displayed_sidebar: mainSidebar
+sidebar_label: Zond Getting Started
 sidebar_position: 1
 pagination_label: Getting Started
 custom_edit_url: https://github.com/theqrl/documentation/edit/main/docs/getting-started.md
@@ -25,11 +25,9 @@ import CodeBlock from '@theme/CodeBlock';
 
 
 
+Project Zond, the next generation of QRL is currently in BetaNet undergoing testing while we build towards final release. 
 
-Welcome to the Quantum Resistant Ledger ZOND documentation! These doc's aim to be the central source of information for the QRL for all topics from using the base tools to building on the project. Whether you are developing a new project or simply understanding the basics this is the source.
-
-The docs are broken into 3 main categories, [Use](/use), [Build](/build) , and [API](/api). These sections aim to guide a users, developers, and everyone in between through the project from basic functionality into more advanced topics like API usage and Extended XMSS HyperTree creation.
-
+See the [Test-Zond Documentation](./zond/test) to get started
 
 
 ---

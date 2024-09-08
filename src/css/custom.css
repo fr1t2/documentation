@@ -162,3 +162,8 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 [data-theme='dark'] .aa-ItemContentDescription[aria-selected=true] {
   color: #0b181e !important;
 }
+
+.skinny {
+ margin-top: -1px; 
+ margin-bottom: -1px
+}

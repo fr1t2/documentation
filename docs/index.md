@@ -4,8 +4,9 @@ title: The Documentation
 hide_title: false
 hide_table_of_contents: true
 displayed_sidebar: mainSidebar
-sidebar_label: Home
+
 sidebar_position: 1
+
 pagination_label: Getting Started
 custom_edit_url: https://github.com/theqrl/documentation/edit/main/docs/getting-started.md
 description: Getting started with the QRL Blockchain and ecosystem

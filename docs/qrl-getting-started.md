@@ -3,10 +3,10 @@ id: qrl-getting-started
 title: The QRL Documentation
 hide_title: false
 hide_table_of_contents: true
-displayed_sidebar: qrlSidebar
-sidebar_label: QRL
+displayed_sidebar: mainSidebar
+sidebar_label: QRL Getting Started
 sidebar_position: 1
-pagination_label: Getting Started
+pagination_label: QRL Getting Started
 custom_edit_url: https://github.com/theqrl/documentation/edit/main/docs/getting-started.md
 description: Getting started with the QRL Blockchain and ecosystem
 keywords:
