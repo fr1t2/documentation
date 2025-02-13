@@ -25,6 +25,10 @@ import CodeBlock from '@theme/CodeBlock';
 
 
 
+:::info UPDATE THIS PAGE TO INCLUDE ZOND INFORMATION
+
+:::
+
 Project Zond, the next generation of QRL is currently in BetaNet undergoing testing while we build towards final release. 
 
 See the [Test-Zond Documentation](./zond/test) to get started
